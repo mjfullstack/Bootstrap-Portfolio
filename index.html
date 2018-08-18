@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Student Bio</title>
+    <!-- CSS Reset, IF DESIRED, UNCOMMENT -->
+    <!-- <link rel = "stylesheet" type = "text/css" href = "assets/css/reset.css" />     -->
+
+    <!-- Latest compiled and minified CSS version 3, more common -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- CSS version 4, but 3 is more popular-->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous"> -->
+
+    <!-- Font Awesome! -->
+    <!-- <link rel="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <!-- LOCAL CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+
+<body>
+        <!-- <div class="container-fullwidth"> --> <!-- For Navbar across all-->
+        <!-- <div class="container"> -->
+        <div class="container-fluid">
+        <!-- Row 1 = Blank Space-->
+        <div class="row align-items-center" id="my-navbar-row">
+            <!-- <div class="col-xs-1"></div> -->
+            <div class="col-xs-11 col-xs-offset-1"> <!-- EXAMPLE: col-xs-6 col-xs-offset-3 -->
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <!-- <div class="container-fluid"> -->
+                            <div class="col-xs-6"> 
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html"><p id="h-name">Michael W. Johnson</p></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-1"></div> <!-- Center Section Blank-->
+                            <div class="col-xs-5">                           
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active">
+                                        <a href="index.html" id="a-about">
+                                            <!-- <span class="glyphicon glyphicon-user"></span> Sign Up</a> -->
+                                            <span></span> About</a>
+                                    </li>
+                                    <li> 
+                                        <a href="portfolio.html" id="a-portfolio">
+                                            <!-- <span class="glyphicon glyphicon-log-in"></span> Login</a> -->
+                                            <!-- <span></span> Portfolio</a> -->
+                                            Portfolio </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html" id="a-contact">
+                                            Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                </nav>
+            <!-- <div class="col-xs-1"></div> -->
+            </div>
+        </div>
+        <!-- <div class="col-xs-3"> Blank Right for Body Portion TBD -->
+        <!-- </div> -->
+            <!--Content in 5 Columns, 5 Rows -->
+            <!-- Row 1 = Blank Space-->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="blank-space"></div>
+            </div>
+        </div>
+            
+            <!-- Row 2 =  Page Content Title-->
+            <!-- <div class="row">
+                <div class="col-xs-7 col-xs-offset-1">
+                    <p id="page-title">About Me</p>
+                </div>
+            </div> -->
+
+            <!-- Row 3 = Horizontal Line-->
+            <!-- <div class="row">
+                <div class="col-xs-11 col-xs-offset-1">
+                    <div class="top-stripe"></div>
+                </div>
+            </div> -->
+
+            <!-- Row 4 = Page content -->
+        <div class="row">
+            <!-- <div class="col-xs-1"></div> -->
+            <div class="col-xs-8 col-xs-offset-1" id="content-title">
+                <p id="page-title">About Me</p>
+                <div id="top-stripe"></div>
+            </div>
+            <div class="col-xs-3" id="content-title">
+                <!-- <div id="top-stripe"></div> -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-1" id="content-section">
+                <!-- Content Section -->
+                <img id="bio-image" src="assets/images/ProfilePic0.jpg" alt="Smiley Face">
+                <!-- <img-responsive id="bio-image" src="assets/images/ProfilePic0.jpg" alt="Smiley Face"> -->
+            <!-- </div>
+            <div class="col-xs-4" id="content-section"> -->
+                <!-- Some body copy -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat libero quis nulla accumsan vestibulum. Cras
+                    ut aliquam tortor. Suspendisse dui urna, posuere nec mi nec, dapibus venenatis lacus. Nam ligula mi, cursus et
+                    porttitor.</p>
+                <p>Sed volutpat semper lobortis. Pellentesque id pulvinar ligula. Aenean accumsan non lacus cursus ultrices. Nunc non
+                    accumsan mauris, quis scelerisque ante. Nulla vel sollicitudin ex, in congue purus. Etiam quis auctor ex. Quisque
+                    at sodales nisi.</p>
+                <p>Vivamus eu consectetur arcu. Sed venenatis justo in leo euismod, eget vulputate justo convallis. Curabitur auctor
+                    eros erat. Nullam quis varius dolor, in viverra nisl. Suspendisse potenti. Cras rutrum quam magna. Suspendisse
+                    in libero lorem. Morbi nec rhoncus dolor. Nullam nibh sem, porta id nunc quis, cursus hendrerit magna. Phasellus
+                    non feugiat nisi.</p>
+                <!--Actual Bio Info -->
+                <p>Michael Johnson is a highly adaptable ASIC/FPGA design, design verification, and field failure analysis engineer. He has several years of experience in Application Specific Integrated Circuit and Field Programmable Gate Array design, with additional experience circuit in card assembly design.</p>
+                <p>His experience includes Verilog RTL design and verification of multiple Advanced Encryption Standard (AES) cryptographic engines.  He engineered Differential Power Analysis (DPA) prevention techniques for Advanced Encryption Standard (AES) hardware module, resulting in Dynamic Data Masking patent with Comcast.</p>
+                <p>He is currently studying full-stack web development at UCSD Extension. His experience including career changes have enabled him to quickly learn and contribute to new projects in various hardware and software roles. Currently, he is studying blockchain technology while completing the bootcamp program.</p>
+            </div>
+            <!-- <div class="col-xs-2"></div> -->
+            <!-- <div class="col-xs-4"></div> -->
+        </div>
+    <!-- </div> -->
+    
+        <!-- Row 5 = Blank Space-->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="blank-space"></div>
+            </div>
+        </div>
+        
+        <!-- <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a
+                        little bit longer.</p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                </div>
+            </div>
+        </div> -->
+
+
+        <label id="bottom-stripe"></label>
+
+
+        <footer>
+            <p class="p_footer">(C) 2018 All Rights Reservered, FullStackJack Solutions</p>
+        </footer>
+    
+    </div>
+</div>
+
+        
+
+
+
+<!-- Need Sticky Footer -->
+
+
+
+
+</body>
+</html>
