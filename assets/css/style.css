@@ -27,6 +27,9 @@ html {
     background-color: #70061d;
   }
   
+  .text-muted {
+    color: rgba(247, 206, 102, 0.699) !important;
+  }
   
 /* Custom page CSS
 -------------------------------------------------- */
@@ -46,9 +49,20 @@ code {
 
 /* My additions... */
 /* ----------------------------------------------------- */
-.fixed-top  {
-  color: rgb(247, 206, 102);
+.fixed-top, .navbar-brand, .nav-link  {
+  color: rgb(247, 206, 102) !important;
   font-weight: bolder;
   background-color: #70061d;
 }
 
+.by-line {
+  font-weight: normal;
+  font-size: 10pt;
+  text-align: center;
+  color: rgb(247, 206, 102);
+}
+
+.my-name {
+  font-size: 22pt;
+  font-style: italic;
+}
