@@ -1,188 +1,54 @@
-* {
-    box-sizing: border-box; /* Width = ADD of Content + Pad + Border +  Margin */
-    /* text-align: left; */
-    /* font-size: 20px;  */
-    /* background-color: #cccccc; */
-    /* border: thin solid black; */
-}
-
-/* .container-fullwidth {
-    background-color: #999999;
-}     */
-
-.container-fluid {
-    content: "";
-    /* background-color: #777777; */
-    background-image: url(../images/qbkls.png);
-    background-repeat: repeat ;
-}    
-
-.navbar {
-    min-height: 80px;
-    margin-bottom: 0px;  /* Works to remove white under teal name box*/
-    background-color: white;
-}
-
-/* #my_nav_li {
-    max-width: 150px;
-} */
-
-#mynavbar-half-1 {
-    background-color: white;
-    /* text-align: right; */
-}
-
-#mynavbar-half-2 {
-    background-color: white;
-    text-align: right;
-}
-
-  /************ Wait until simple grid is complete *****************
-  ************ Wait until simple grid is complete *****************/
-
-.navbar-brand  {
-    min-height: 80px;
-    color: white;
-    background-color: #4aaaa5;
-    margin-left: 45px;
-}    
-
-#my-navbar-row {
-    min-height: 80px;
-    background-color: white;
-    margin-left: -15px;
-
-}
-
-#h-name {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: bolder;
-    padding-top: 13px;
-    margin: 0px 45px 0px 45px;
-}
-
-.nav, .navbar-nav, .navbar-right {
-    /* color: #777777; */
-    flex-direction: row;
-    /* text-align: right; */
-
-}
-
-#a-about, #a-portfolio, #a-contact {
-    color: #777777;
-    font-size: 20px;
-    padding-top: 30px;
-    text-align: right;
-}
-
-.row {
-    margin-left: 30px;
-}
-
-body {
-    display: block;
-    /* flex-direction: column; */
-    font-size: 24px;
-    color: #777777;
-    /* background-image: url(../images/qbkls.png);
-    background-repeat: repeat ; */
-}
 
 
-p {
-    margin-left: 45px;
-    margin-right: 45px;
-}
-/* html, body {
-    height: 100%;
-} */
-
-/* .wrapper {
-    flex: 1 0 auto;
-} */
-
-/* .row {
-    background-color: #cccccc;
-} */
-
-/* .wrapper {
-    min-height: calc(100vh - 70px);
-  } */
-
-  /************ Wait until simple grid is complete *****************
-  ************ Wait until simple grid is complete *****************/
-
-.blank-space {
-    height: 30px;
-    background-image: url(../images/qbkls.png);
-}
-
-/* #my-page-column-right {
-    background-image: url(../images/qbkls.png); 
+/* body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
 } */
 
 
-#page-title {
-    line-height: 3;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px; 
-    font-weight: bolder;
-    color: #4aaaa5;
-    background-color: white;
-    margin: 0px 30px 0px 45px;
-    padding-left: -15px;
-}
-
-#bio-image {
-    float: left;
-    margin: 0px 45px 30px 45px;
-}
-
-#content-title {
-    /* max-width: 90pc; */
-    background-color: white;
-}
-
-#bio-section, #image-section {
-    float: left;
-    /* max-width: 90pc; */
-    background-color: white;
-    line-height: 1.5;
-}
-
-
-.footer {
-    /* flex-shrink: 0; */
-    border-top-color: #4aaaa5;
-    border-top-width: 8px;
-    height: 50px;
-    padding: 20px;
-    background-color: #666666;
-}
-
- .p_footer {
-    font-size:10pt; 
-    text-align: center;
-    line-height: 4;
-    margin: 0px;
-    color: white;
-    background-color: #666666;
-}
-
-
-#top-stripe {
-    height: 3px;
+/* NAVBAR with Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
     margin-bottom: 40px;
-    margin-left: 30px;
-    margin-right: 30px;
-    background-color: #4aaaa5;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 40px;
+    line-height: 40px; /* Vertically center the text there */
+    text-align: center;
+    background-color: #70061d;
+  }
+  
+  
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+body > .container {
+  padding: 60px 15px 0;
 }
 
-#bottom-stripe {
-    clear: both;
-    display: block;
-    height: 10px;
-    margin: 0px;
-    background-color: #4aaaa5;
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
 }
+
+code {
+  font-size: 80%;
+}
+
+/* My additions... */
+/* ----------------------------------------------------- */
+.fixed-top  {
+  color: rgb(247, 206, 102);
+  font-weight: bolder;
+  background-color: #70061d;
+}
+
