@@ -12,10 +12,12 @@ html {
     position: relative;
     min-height: 100%;
   }
+
   body {
     /* Margin bottom by footer height */
     margin-bottom: 40px;
   }
+
   .footer {
     position: fixed;
     bottom: 0;
@@ -24,18 +26,20 @@ html {
     height: 40px;
     line-height: 40px; /* Vertically center the text there */
     text-align: center;
-    background-color: #70061d;
+    /* background-color: #56021f; */
+    background-color: #46001c;
   }
   
   .text-muted {
     color: rgba(247, 206, 102, 0.699) !important;
-  }
+    border-top: solid, 10px, gold;
+}
   
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 body > .container {
-  padding: 60px 15px 0;
+  padding: 90px 15px 0;
 }
 
 .footer > .container {
@@ -52,9 +56,29 @@ code {
 .fixed-top, .navbar-brand, .nav-link  {
   color: rgb(247, 206, 102) !important;
   font-weight: bolder;
-  background-color: #70061d;
+  /* background-color: #70061d; */
+  /* background-color: #56021f; */
+  background-color: #46001c;
+  /* margin-bottom: 200px; */
+  /* text-align: right; */
+  border-color: gold;
+  border-bottom-width: 20px
 }
 
+.navbar-default {
+  border-color: gold;
+  border-bottom-width: 20px
+}
+
+.border-bottom {
+  background-color: gold;
+  border-bottom-width: 20px
+}
+
+.border-top {
+  border-color: gold;
+  border-top-width: 20px;
+}
 .by-line {
   font-weight: normal;
   font-size: 10pt;
@@ -65,4 +89,43 @@ code {
 .my-name {
   font-size: 22pt;
   font-style: italic;
+  text-align: left;
+  padding-right: 200px;
 }
+
+
+/* #my-nav {
+  text-align: right;
+} */
+
+/* From / for my wireframe exercise */
+/* * {
+    box-sizing: border-box;
+  } */
+
+body {
+  background-image: url(../images/background-2660437_960_720.jpg);
+  background-repeat: repeat ;
+  text-align: justify;
+  font-size: 14pt; 
+  line-height: 1.5;
+}
+
+.my-div-blocks {
+  background-color: #46001c;
+  /* border: 2px solid red; */
+  color: white;
+  margin: 5px;
+  color: rgb(247, 206, 102);
+}
+
+#bio-image {
+  float: left;
+  margin: 30px;
+  max-width: 25%;
+}
+
+#free-vector {
+  float: right;
+}
+
