@@ -1,188 +1,296 @@
+
 * {
-    box-sizing: border-box; /* Width = ADD of Content + Pad + Border +  Margin */
-    /* text-align: left; */
-    /* font-size: 20px;  */
-    /* background-color: #cccccc; */
-    /* border: thin solid black; */
+  box-sizing: border-box;
 }
 
-/* .container-fullwidth {
-    background-color: #999999;
-}     */
-
-.container-fluid {
-    content: "";
-    /* background-color: #777777; */
-    background-image: url(../images/qbkls.png);
-    background-repeat: repeat ;
-}    
-
-.navbar {
-    min-height: 80px;
-    margin-bottom: 0px;  /* Works to remove white under teal name box*/
-    background-color: white;
-}
-
-/* #my_nav_li {
-    max-width: 150px;
-} */
-
-#mynavbar-half-1 {
-    background-color: white;
-    /* text-align: right; */
-}
-
-#mynavbar-half-2 {
-    background-color: white;
-    text-align: right;
-}
-
-  /************ Wait until simple grid is complete *****************
-  ************ Wait until simple grid is complete *****************/
-
-.navbar-brand  {
-    min-height: 80px;
-    color: white;
-    background-color: #4aaaa5;
-    margin-left: 45px;
-}    
-
-#my-navbar-row {
-    min-height: 80px;
-    background-color: white;
-    margin-left: -15px;
-
-}
-
-#h-name {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: bolder;
-    padding-top: 13px;
-    margin: 0px 45px 0px 45px;
-}
-
-.nav, .navbar-nav, .navbar-right {
-    /* color: #777777; */
-    flex-direction: row;
-    /* text-align: right; */
-
-}
-
-#a-about, #a-portfolio, #a-contact {
-    color: #777777;
-    font-size: 20px;
-    padding-top: 30px;
-    text-align: right;
-}
-
-.row {
-    margin-left: 30px;
-}
+/* NAVBAR with Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+  }
 
 body {
-    display: block;
-    /* flex-direction: column; */
-    font-size: 24px;
-    color: #777777;
-    /* background-image: url(../images/qbkls.png);
-    background-repeat: repeat ; */
+  /* Margin bottom by footer height */
+  margin-bottom: 40px;
 }
 
-
-p {
-    margin-left: 45px;
-    margin-right: 45px;
-}
-/* html, body {
-    height: 100%;
-} */
-
-/* .wrapper {
-    flex: 1 0 auto;
-} */
-
-/* .row {
-    background-color: #cccccc;
-} */
-
-/* .wrapper {
-    min-height: calc(100vh - 70px);
-  } */
-
-  /************ Wait until simple grid is complete *****************
-  ************ Wait until simple grid is complete *****************/
-
-.blank-space {
-    height: 30px;
-    background-image: url(../images/qbkls.png);
+.footer {
+  position: fixed; /* Had to change this from relative from bootstrap */
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  line-height: 40px; /* Vertically center the text there */
+  text-align: center;
+  background-color: #46001c;
 }
 
-/* #my-page-column-right {
-    background-image: url(../images/qbkls.png); 
-} */
+.my-footer-text-muted {
+  /* !Important required to override, even with unique class */
+  color: rgba(247, 206, 102, 0.699) !important;
+}
+  
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+body > .container {
+  padding: 90px 15px 0;
+}
 
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
-#page-title {
-    line-height: 3;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px; 
-    font-weight: bolder;
-    color: #4aaaa5;
-    background-color: white;
-    margin: 0px 30px 0px 45px;
-    padding-left: -15px;
+code {
+  font-size: 80%;
+}
+
+/* My additions... */
+/* ----------------------------------------------------- */
+.fixed-top, .navbar-brand, .nav-link  {
+  color: rgb(247, 206, 102) !important;
+  font-weight: bolder;
+  background-color: #46001c;
+  /* text-align: right; */
+}
+
+.by-line {
+  font-weight: normal;
+  font-size: 10pt;
+  text-align: center;
+  color: rgb(247, 206, 102);
+}
+
+.my-name {
+  font-size: 22pt;
+  font-style: italic;
+  text-align: left;
+  padding-right: 100px;
+}
+
+/* From / for my wireframe exercise */
+body {
+  background-image: url(../images/background-2660437_960_720.jpg);
+  background-repeat: repeat ;
+  text-align: justify;
+  font-size: 14pt; 
+  line-height: 1.5;
+}
+
+.my-div-blocks {
+  background-color: #46001c;
+  /* border: 2px solid red; */
+  /* color: white; */
+  margin: 30px 5px;
+  color: rgb(247, 206, 102);
 }
 
 #bio-image {
-    float: left;
-    margin: 0px 45px 30px 45px;
+  float: left;
+  margin: 30px;
+  max-width: 25%;
 }
 
-#content-title {
-    /* max-width: 90pc; */
-    background-color: white;
+#free-vector {
+  float: right;
 }
 
-#bio-section, #image-section {
-    float: left;
-    /* max-width: 90pc; */
-    background-color: white;
-    line-height: 1.5;
+.bottom-nav-border{
+  border-bottom: 6px solid rgb(247, 206, 102);
 }
 
-
-.footer {
-    /* flex-shrink: 0; */
-    border-top-color: #4aaaa5;
-    border-top-width: 8px;
-    height: 50px;
-    padding: 20px;
-    background-color: #666666;
+.top-footer-border{
+  border-top: 6px solid rgb(247, 206, 102);
 }
 
- .p_footer {
-    font-size:10pt; 
-    text-align: center;
-    line-height: 4;
-    margin: 0px;
-    color: white;
-    background-color: #666666;
+.p-desc {
+  padding-top: 20px;
 }
 
 
-#top-stripe {
-    height: 3px;
-    margin-bottom: 40px;
-    margin-left: 30px;
-    margin-right: 30px;
-    background-color: #4aaaa5;
+div {
+  padding: 10px 10px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-#bottom-stripe {
-    clear: both;
-    display: block;
-    height: 10px;
-    margin: 0px;
-    background-color: #4aaaa5;
+#app-link, #repo-link {
+  /* display: block; */
+  color: gold;
+  font-weight: bolder;
 }
+
+.app-image {
+  /* max-width: 17rem;
+  max-height: 17rem; */
+  margin-bottom: 30px;
+  width:100%;
+  height:auto;
+}
+
+/***************/
+/* MODALS CODE */
+/***************/
+.modal,
+.modal-box {
+z-index: 900;
+}
+
+.modal-sandbox {
+position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background: transparent;
+}
+
+.modal {
+display: none; 
+position: fixed;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+background: rgb(0,0,0);
+background: rgba(0,0,0,.8);
+overflow: auto;
+}
+
+.modal-box {
+position: relative;
+width: 80%;
+max-width: 920px;
+margin: 100px auto;
+animation-name: modalbox;
+animation-duration: .4s;
+animation-timing-function: cubic-bezier(0,0,.3,1.6);
+}
+
+.modal-header {
+padding: 20px 40px;
+background: #546E7A;
+color: #ffffff;
+}
+
+.modal-body {
+background: #ECEFF1;
+padding: 60px 40px;
+}
+
+/* Animation */
+.modal-content, #caption {    
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes modalbox {
+  0% {
+    top: -250px; 
+    opacity: 0;
+  }
+  100% {
+    top: 0; 
+    opacity: 1;
+}
+}
+
+@keyframes modalbox {
+  0% {
+    top: -250px; 
+    opacity: 0;
+  }
+  100% {
+    top: 0; 
+    opacity: 1;
+  }
+}
+
+.modal-trigger, button {
+top: 50%;
+left: 50%;
+padding: 20px 40px;
+background: transparent;
+color: #ffffff;
+border: 1px solid #ffffff;
+text-decoration: none;
+}
+
+.modal-trigger {
+/* position: absolute; */
+/* border: 4px solid red; */
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+transition: ease .2s;
+}
+
+button {
+/* border: 1px solid #333333; */
+/* border: 4px solid red; */
+outline: none;
+color: #333333;
+}
+
+.modal-trigger:hover {
+padding: 20px 60px;
+/* border: 4px solid red; */
+}
+
+/* Close Button */
+/* .close-modal {
+  text-align: right;
+  cursor: pointer;
+  } */
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+  }
+  
+  
+
+
+
+/*****************************************/
+/* Media Queries */
+/*****************************************/
+@media only screen and (max-width: 576px) {
+  .my-div-blocks {
+    margin: 60px 5px;
+    /* color: rgb(247, 206, 102); */
+  }
+}
+
+@media only screen and (max-width: 406px) {
+  .my-div-blocks {
+    margin: 120px 5px;
+    /* color: rgb(247, 206, 102); */
+  }
+}
+

@@ -1,117 +1,103 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Tab Components -->
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Full Stack Jack</title>
 
-<head>
-    <meta charset="UTF-8">
-    <title> Student Bio, CSS, MultiPage Site</title>
-    <!-- Don't want CSS Reset just yet! 
-    <link rel = "stylesheet"
-    type = "text/css"
-    href = "assets/css/reset.css" />    
-    -->
-    <link rel = "stylesheet"
-    type = "text/css"
-    href = "assets/css/style.css" />    
+    <!-- CSS Reset -->
+    <link rel = "stylesheet" type = "text/css" href = "assets/css/reset.css"/>
 
-    <link rel="shortcut icon" href="assets/images/w3css.gif" sizes="16x16">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-</head>
 
-<body>
-    
-     <!-- Fixed div -->
-     <!--
-    <div id="fixed">
-        &lt;div&gt;<br> position: fixed
-    </div>
-     -->
+    <!-- Font Awesome! -->
+    <!-- <link rel="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
-  <header>
-    <div class="FixedSideBySide">
-        <section id="left">
-       </section>
-    
-        <section id="middle">
-          Michael W. Johnson
-        </section>
-    
-        <section id="right">
-            <a href="index.html">About</a> <a href="portfolio.html">Portfolio</a> <a href="contact.html">Contact</a> <h2></h2>
-        </section>
+    <!-- LOCAL CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
-        <section id="FarRight">
-        </section>
-    </div>
-</header>
+  </head>
+  <body>
+    <header>
+      <!-- NavBar, Fixed, Responsive -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bottom-nav-border">
+        <!-- <a class="navbar-brand" href="#">FullStackJack<p class="by-line">We'll figure it out...</p></a> -->
+        <a class="navbar-brand" href="#">FullStackJack</a> <!--  <p class="by-line"></p></a>   -->
+        <div class="my-name">Michael W. Johnson</div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li> -->
+          </ul>
+          <!-- <form class="form-inline mt-2 mt-md-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+        <!-- <span class="border-bottom"></span> -->
+    </nav>
+    </header>
 
-    <div class="wrapper">
-        <section id="portpic-content">
-          <!-- Heading 1: The Most Important Headline -->
-          <h1 id="MostImportant">Portfolio</h1>
-    
-          <label id="top-stripe"></label>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <div class="row" id="my-top-row">
+        <div class="col-lg-10 col-md-10 col-sm-10 offset-1">
+          <div class="my-div-blocks" id="my-first-blk">
+            <!-- Image Section -->
+            <!-- <img id="bio-image" src="assets/images/ProfilePic0.jpg" alt="Smiley Face">
+            <img id="bio-image" src="assets/images/ProfileWolfPic_400.jpg" alt="Smiley Face">                   -->
+            <!-- <div id="portfolio-items"></div> -->
+            <div class="container">
+              <div class="row" id="portfolio-items"></div>
+            </div>
+            <div class="container">
+              <div class="row" id="modal-section"></div>
+            </div>
           
+          </div>
+        </div>
+      </div>
+      <!-- <a id="free-vector" href="https://www.freevector.com/burgundy-swirls-vector">FreeVector.com</a> -->
+    </main>
 
-          <section id="portfolio-pics">
-            <!-- Some body copy-->
-            <div class="portpic" id="upper-left-1">
-                <!-- <img id="app_1" src="https://picsum.photos/200?random" alt="Small Business App"> -->
-                <img id="app_1" src="assets/images/225x150_Laptop.jpg" alt="Small Business App">
-                <div id="label-mobile-sm-bz">Mobile Business</div>
-            </div>
-
-            <div class="portpic" id="upper-right-2">
-                <img id="app_2" src="assets/images/225x150_MinistryApp.jpg" alt="Minsitry App">
-                <!-- img id="app_2" src="https://picsum.photos/225/150?random" alt="Minsitry App" -->
-                <div id="label-ministry">Ministry Apps</div>
-            </div>
-        
-            <div class="portpic" id="mid-left-3">
-                <img id="app_3" src="assets/images/225x150_MileGo.jpg" alt="Mile Go App">
-                <!-- img id="app_3" src="https://picsum.photos/225/150?random" alt="Mile Go  App" -->
-                <div id="label-mile-go">Mile Go App</div>
-            </div>
-        
-            <div class="portpic" id="mid-right-4">
-                <img id="app_4" src="assets/images/225x150_InsuranceApp.jpg" alt="Insurance App">
-                <!-- <img id="app_4" src="https://picsum.photos/225/150?random" alt="Insurance App"> -->
-                <div id="label-insurance">Insurance App</div>
-            </div>
-
-            <div class="portpic" id="lower-left-5">
-                <img id="app_5" src="assets/images/225x150_HomeLocateApp.jpg" alt="Home Locator App">
-                <!-- img id="app_5" src="https://picsum.photos/225/150?random" alt="Home Locator App" -->
-                <div id="label-home-locator">Home Locator App</div>
-            </div>
-
-            <!-- <div class="portpic" id="lower-right-6">
-                <img id="app_6" src="https://picsum.photos/225/150?random" alt="Mini App Launcher">
-                <div id="label-mini-app-launch">Mini App Launcher</div>
-            </div> -->
-
-          </section>
-
-
-        </section>
+    <footer class="footer top-footer-border">
+    <div class="container">
+        <!-- <span class="border-top"></span> -->
+        <span class="text-muted my-footer-text-muted">(C) 2018 Copyright, FullStackJack Solutions.</span>
     </div>
-
-
-
-    <label id="bottom-stripe"></label>
-
-
-    <footer> 
-      (C) 2018 Copyright, FullStackJack Solutions
     </footer>
 
-<!-- Set aside INCLUDED html for now, need Node.js 
-    <div portfolio-include-html="page_footer.html">
-    </div>
-    <script>
-        includeHTML();
-    </script>
--->
+  <!-- Bootstrap core JavaScript, required for sticky footer -->
+  <!-- ================================================== -->    
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- This one uses relative, still need to find this! -->
+  <!-- <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!-- Project JS -->
+  <script src="./assets/javascript/active.js"></script>
 
 </body>
-
 </html>
