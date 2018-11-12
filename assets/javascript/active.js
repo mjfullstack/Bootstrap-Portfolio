@@ -17,7 +17,7 @@ $(document).ready(function(){
         techs : ["html5", "css", "JavaScript", "jQuery", "bootstrap", "Firebase"],
         repoURL : "https://github.com/mjfullstack/CodeMonkeysMealGenie",
         deployedURL : "https://mjfullstack.github.io/CodeMonkeysMealGenie/",
-        appImage : "assets/images/ProfileWolfPic_400.jpg"
+        appImage : "assets/images/MealGenie.png"
     },
     {
         name : "Train Schedule App",
@@ -26,7 +26,7 @@ $(document).ready(function(){
         techs : ["html5", "css", "JavaScript", "jQuery", "Firebase"],
         repoURL : "https://github.com/mjfullstack/TrainSched",
         deployedURL : "https://mjfullstack.github.io/TrainSched/",
-        appImage : "assets/images/ProfileWolfPic_400.jpg"
+        appImage : "assets/images/AllAboardTrainApp.png"
     },
     {
         name : "Snow White Hangman App",
@@ -35,7 +35,7 @@ $(document).ready(function(){
         techs : ["html5", "css", "JavaScript"],
         repoURL : "https://github.com/mjfullstack/Word-Guess-Game",
         deployedURL : "https://github.com/mjfullstack/Word-Guess-Game/",
-        appImage : "assets/images/ProfileWolfPic_400.jpg"
+        appImage : "assets/images/HangADwarf.png"
     },
     {
         name : "GifTastic App",
@@ -44,17 +44,17 @@ $(document).ready(function(){
         techs : ["html5", "css", "JavaScript", "jQuery", "modals"],
         repoURL : "https://github.com/mjfullstack/GifTastic",
         deployedURL : "https://mjfullstack.github.io/GifTastic/",
-        appImage : "assets/images/ProfileWolfPic_400.jpg"
+        appImage : "assets/images/GifTastic.png"
     },
-    // {
-    //     name : "Star Wars RPG",
-    //     contrib : "Sole Contributor HW",
-    //     shortDesc : "Beginning jQuery Role Playing Game",
-    //     techs : ["html5", "css", "JavaScript", "jQuery"],
-    //     repoURL : "https://github.com/mjfullstack/TBD",
-    //     deployedURL : "https://mjfullstack.github.io/TBD/",
-    //     appImage : "assets/images/ProfileWolfPic_400.jpg"
-    // },
+    {
+        name : "Star Wars RPG",
+        contrib : "Sole Contributor HW",
+        shortDesc : "Beginning jQuery Role Playing Game",
+        techs : ["html5", "css", "JavaScript", "jQuery"],
+        repoURL : "https://github.com/mjfullstack/Unit-4-Game",
+        deployedURL : "https://mjfullstack.github.io/Unit-4-Game/",
+        appImage : "assets/images/StarWarsRPG.png"
+    },
     {
         name : "Sugar Rush! (Candy Trivia App)",
         contrib : "Sole Contributor HW",
@@ -62,17 +62,27 @@ $(document).ready(function(){
         techs : ["html5", "css", "JavaScript", "moment.js"],
         repoURL : "https://github.com/mjfullstack/TriviaGame",
         deployedURL : "https://mjfullstack.github.io/TriviaGame/",
-        appImage : "assets/images/ProfileWolfPic_400.jpg"
+        appImage : "assets/images/SugarRush.png"
     },
     {
         name : "Portfolio Website",
         contrib : "Sole Contributor HW",
         shortDesc : "Beginning bootstrap project",
         techs : ["html5", "css", "JavaScript", "bootstrap"],
-        repoURL : "https://github.com/mjfullstack/TriviaGame",
-        deployedURL : "https://mjfullstack.github.io/TriviaGame/",
-        appImage : "assets/images/ProfileWolfPic_400.jpg"
-    }
+        repoURL : "https://github.com/mjfullstack/Bootstrap-Portfolio",
+        deployedURL : "https://mjfullstack.github.io/Bootstrap-Portfolio/",
+        appImage : "assets/images/Portfolio.png"
+    },
+    {
+        name : "Friend Finder",
+        contrib : "Sole Contributor HW",
+        shortDesc : "Connecting Front and Back ends together",
+        techs : ["html5", "bootstrap", "JavaScript", "jQuery", "node.js", "express", "package.json", "npm"],
+        repoURL : "https://github.com/mjfullstack/FriendFinder",
+        deployedURL : "https://limitless-reaches-17156.herokuapp.com/",
+        appImage : "assets/images/FriendFinder.png"
+    },
+
   ];
 
 // ===================================================
