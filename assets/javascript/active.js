@@ -82,6 +82,15 @@ $(document).ready(function(){
         deployedURL : "https://limitless-reaches-17156.herokuapp.com/",
         appImage : "assets/images/FriendFinder.png"
     },
+    {
+        name : "Eat-Da-Burger",
+        contrib : "Sole Contributor HW",
+        shortDesc : "First Fullstack App",
+        techs : ["html5", "bootstrap", "JavaScript", "jQuery", "node.js", "express", "package.json", "npm", "MySQL", "Heroku"],
+        repoURL : "https://github.com/mjfullstack/BurgerRemoteDB",
+        deployedURL : "https://ancient-thicket-75290.herokuapp.com/",
+        appImage : "assets/images/Eat-Da-Burger.png"
+    }
 
   ];
 
