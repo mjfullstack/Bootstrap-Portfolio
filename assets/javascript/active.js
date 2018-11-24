@@ -114,12 +114,12 @@ var showPortfolioJQuery = function (item) { // (destCol, itemTitleNum, itemTitle
     var screenCard = $("<div>")
     .addClass("card")
     .addClass("card-title")
-    .attr("width", "12rem");
+    .attr("width", "8rem");
     var screenCardTitle =$("<div>");
     var screenCardBody = $("<div>")
     .attr("class", "card-body");
     var addAppAttrs = $("<a>")
-    .addClass("btn btn-primary sel-app-btn")
+    .addClass("btn btn-primary btn-sm sel-app-btn")
     .attr("href", "#")
     .attr("role", "button")
     .attr("data-appName", appName)
